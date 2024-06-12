@@ -1,16 +1,8 @@
-# book_time_racker
+# book_time_tracker
 
-A new Flutter project.
+책 읽은 시간을 기록하기 위한 간단한 앱입니다.
+2024 봄학기 딥러닝 Term Project를 위해 구현하였습니다.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+먼저 Roboflow를 활용해 opened/closed 이진 분류 모델을 학습시켰습니다.
+이때 학습된 모델의 inference를 실행해, (서버) 파이썬을 먼저 실행하여 서버를 통해 예측 결과를 수신하여,
+(클라이언트) Flutter App에서 예측 결과와 시간을 송신하는 구조입니다. 
